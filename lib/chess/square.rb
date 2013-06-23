@@ -17,5 +17,13 @@ module Chess
       @color == :dark
     end
 
+    def to_s
+      if dark?
+        '#'
+      else
+        ' '
+      end
+    end
+
   end
 end

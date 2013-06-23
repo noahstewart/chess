@@ -11,6 +11,10 @@ describe Chess::Square do
     it { should_not be_light }
 
     it { should be_dark }
+
+    describe '#to_s' do
+      it { expect(subject.to_s).to eq '#' }
+    end
   end
 
   describe 'light square' do
@@ -19,5 +23,9 @@ describe Chess::Square do
     it { should be_light }
 
     it { should_not be_dark }
+
+    describe '#to_s' do
+      it { expect(subject.to_s).to eq ' ' }
+    end
   end
 end
